@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.odela-pixel/asientouno",
+  "description": "Registro Mercantil español (BORME) cruzado con subvenciones (BDNS) y contratos públicos (PLACSP), por empresa, con enlace al documento oficial de cada dato.",
+  "repository": { "url": "https://github.com/odela-pixel/asientouno-mcp", "source": "github" },
+  "version": "1.0.0",
+  "websiteUrl": "https://asientouno.com/mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.asientouno.com/mcp",
+      "headers": [
+        { "name": "Authorization", "description": "Bearer <api_key> — clave gratuita en https://asientouno.com/contacto", "isRequired": true, "isSecret": true }
+      ]
+    }
+  ]
+}

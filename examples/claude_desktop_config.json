@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "asientouno": {
+      "command": "npx",
+      "args": [
+        "-y", "mcp-remote",
+        "https://mcp.asientouno.com/mcp",
+        "--header", "Authorization: Bearer ${ASIENTOUNO_API_KEY}"
+      ],
+      "env": { "ASIENTOUNO_API_KEY": "tu_api_key" }
+    }
+  }
+}
