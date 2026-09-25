@@ -72,6 +72,20 @@ curl -s https://mcp.asientouno.com/mcp \
 Sin clave, el servidor responde `401` con el mensaje exacto de lo que falta.
 `https://mcp.asientouno.com/health` es público y devuelve `{"estado":"ok"}`.
 
+## Cifras (26/09/2026)
+
+- 883.659 sociedades y 3,9 millones de actos del BORME (boletines desde el 11/03/2024).
+- 148.339 concesiones de la BDNS (desde 2022), 66.546 atribuidas a 24.051 sociedades.
+- 653.078 adjudicaciones de la PLACSP (desde 2004).
+
+## Lo que este servidor NO hace
+
+- No da cuentas anuales ni cifras de facturación: `asientouno_cuentas_anuales` responde `no_disponible_aun`.
+- No dice si una empresa está sancionada: una coincidencia por nombre con una lista no es una sanción.
+- No cubre el BORME anterior a marzo de 2024 ni empresas fuera de España.
+- No tiene SLA: es un servicio en un servidor único; `/health` es público para que lo vigiles.
+- El saludo del protocolo (`initialize`, `tools/list`) responde sin clave; los datos (`tools/call`) no.
+
 ## Fuentes y límites, dichos claros
 
 - BORME cargado desde marzo de 2024; BDNS desde 2022; PLACSP desde 2004.
