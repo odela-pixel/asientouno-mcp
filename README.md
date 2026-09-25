@@ -7,13 +7,13 @@ diligencia debida, KYB, verificación de proveedores y clientes.
 
 - Endpoint remoto: `https://mcp.asientouno.com/mcp` (Streamable HTTP, JSON-RPC)
 - Autenticación: `Authorization: Bearer <api_key>`
-- Plan gratuito: 500 llamadas al día, 60 por minuto
+- Plan gratuito: 50 llamadas al día (Pro: 500, Business: 5.000), 60 por minuto
 - Web: https://asientouno.com/mcp · Precios: https://asientouno.com/precios
 
 > **English**: MCP server for the Spanish Companies Registry gazette (BORME),
 > joined with public grants (BDNS) and public procurement awards (PLACSP) per
 > company. Every fact links to its official publication. Remote Streamable
-> HTTP endpoint, Bearer API key, 500 calls/day on the free plan.
+> HTTP endpoint, Bearer API key, free tier (50 calls/day), self-serve signup.
 
 ## Herramientas
 
@@ -32,8 +32,10 @@ Todas las herramientas son de solo lectura (`readOnlyHint: true`).
 
 ## Conseguir una API key
 
-Escribe a través de https://asientouno.com/contacto indicando el caso de uso.
-La clave llega por correo; no hay tarjeta ni contrato para el plan gratuito.
+En https://asientouno.com/cuenta: entras con tu correo (enlace mágico, sin
+contraseña) y pulsas «Crear mi API key gratuita». La clave aparece en pantalla
+una sola vez. Sin tarjeta. Los planes Pro y Business se contratan en
+https://asientouno.com/precios y suben la cuota de esa misma clave.
 
 ## Conectar
 
