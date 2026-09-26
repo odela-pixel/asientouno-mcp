@@ -93,8 +93,10 @@ Sin clave, el servidor responde `401` con el mensaje exacto de lo que falta.
   candidatos y `siguiente_paso` cuando hay ambigüedad.
 - Nunca se afirma que una empresa esté sancionada por una coincidencia de
   nombre.
-- Los nombres de personas físicas van parcialmente ofuscados en el plan
-  gratuito; el nombre de una sociedad es público.
+- Plan gratuito: los nombres de personas físicas van parcialmente ocultos
+  (en los campos y en el texto de los actos) y `asientouno_cargos_persona`
+  solo busca sociedades. Pro y Business los muestran completos. El nombre de
+  una sociedad es público y se ve siempre.
 
 ## Licencia
 
